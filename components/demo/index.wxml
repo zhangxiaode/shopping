@@ -1,0 +1,6 @@
+<view class="wrapper">
+  <slot name="before"></slot>
+  <view>这里是组件的内部节点</view>
+  <button type="default" bindtap="geta">Button</button>
+  <slot name="after"></slot>
+</view>
