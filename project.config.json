@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "touristappid",
-	"projectname": "app",
+	"appid": "wx97333387a0ecdde1",
+	"projectname": "shopping",
 	"condition": {
 		"search": {
 			"current": -1,

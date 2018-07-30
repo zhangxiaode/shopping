@@ -2,25 +2,25 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/page1/index",
-    "pages/page2/index"
+    "pages/cart/index",
+    "pages/userCenter/index"
   ],
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "iconPath":"assets/logo.png",
-      "selectedIconPath":"assets/logo.png",
+      "iconPath":"assets/home.png",
+      "selectedIconPath":"assets/home.png",
       "text": "首页"
     },{
-      "pagePath": "pages/page1/index",
-      "iconPath":"assets/logo.png",
-      "selectedIconPath":"assets/logo.png",
-      "text": "page1"
+      "pagePath": "pages/cart/index",
+      "iconPath":"assets/cart.png",
+      "selectedIconPath":"assets/cart.png",
+      "text": "购物车"
     }, {
-      "pagePath": "pages/page2/index",
-      "iconPath":"assets/logo.png",
-      "selectedIconPath":"assets/logo.png",
-      "text": "page2"
+      "pagePath": "pages/userCenter/index",
+      "iconPath":"assets/user.png",
+      "selectedIconPath":"assets/user.png",
+      "text": "个人中心"
     }]
   },
   "window":{

@@ -10,7 +10,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: () => {
     wx.navigateTo({
       url: '../logs/logs'
     })
@@ -20,9 +20,7 @@ Page({
       url: '../page1/index'
     })
   },
-  onLoad: function () {
-    console.log(app.data.a)
-    console.log(app.geta())
+  onLoad: function() {
     /*ajax({
       url: `/endpoint/login/captcha.jpg`,
       method: "get",
@@ -59,7 +57,6 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

@@ -1,14 +1,14 @@
 //app.js
+import {formatTime} from '/utils/index'
 App({
   data:{
     a: 1
   },
   geta(){
-    console.log(this)
     this.data.a++
     return this.data.a
   },
-  onLaunch: function () {
+  onLaunch() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
