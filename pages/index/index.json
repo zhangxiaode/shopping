@@ -2,5 +2,6 @@
   "component": true,
   "usingComponents": {
     "demo": "/components/demo/index"
-  }
+  },
+  "navigationBarTitleText": "首页"
 }

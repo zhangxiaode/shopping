@@ -1,17 +1,49 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
+<view class="home">
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-    <demo prop-a="123">
-      <view slot="before">这里是插入到组件slot name="before"中的内容</view>
-      <view slot="after">这里是插入到组件slot name="after"中的内容</view>
-    </demo>
   </view>
   <view class="usermotto">
     <text class="user-motto" bindtap="gopage1">{{motto}}</text>
   </view>
+  <demo prop-a="123">
+    <view slot="before">这里是插入到组件slot name="before"中的内容</view>
+    <view slot="after">这里是插入到组件slot name="after"中的内容</view>
+  </demo> -->
+  <scroll-view class="menu" scroll-y scroll-with-animation>
+    <view class="scroll-view-item">
+      <view wx:for="{{menuList}}" wx:key="index" class="{{menuIndex == index ? 'menuItem actived':'menuItem'}}" data-index="{{index}}" data-id="{{item.id}}" bindtap="changeIndex">
+        {{item.value}}
+      </view>
+    </view>
+  </scroll-view>
+  <scroll-view class="cookList" scroll-y scroll-into-view="{{orientate}}" scroll-with-animation>
+    <view class="cookWrap" wx:for="{{cookList}}" wx:key="index" wx:for-index="index" wx:for-item="item" id="{{item.id}}">
+      <view class="cookHd">
+        {{item.cookHd}}
+      </view>
+      <view class="cookBd">
+        <view class="item" wx:for="{{item.cookBd}}" wx:key="idx" wx:for-index="idx" wx:for-item="child">
+          <image class="itemIcon" src="{{child.icon}}"></image>
+          <view class="itemTxt">
+            <view class="cookName">{{child.cookName}}</view>
+            <view class="cookInfo">{{child.cookIntro}}</view>
+            <view class="cookInfo">月售{{child.sals}} 赞{{child.like}}</view>
+            <view class="cookPrice">
+              <text>¥{{child.price}}</text>
+              <view class="changeNum">
+                <image class="cookIcon plus" src="../../assets/minus.svg"></image>
+                <view class="num" wx:if="false">{{child.num}}</view>
+                <image class="cookIcon minus" src="../../assets/plus.svg"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
 </view>

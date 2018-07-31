@@ -1,5 +1,4 @@
 //app.js
-import {formatTime} from '/utils/index'
 App({
   data:{
     a: 1
