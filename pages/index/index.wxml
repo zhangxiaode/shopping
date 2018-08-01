@@ -34,11 +34,11 @@
             <view class="cookInfo">{{child.cookIntro}}</view>
             <view class="cookInfo">月售{{child.sals}} 赞{{child.like}}</view>
             <view class="cookPrice">
-              <text>¥{{child.price}}</text>
+              <text class="cookPriceNum">¥{{child.price}}</text>
               <view class="changeNum">
-                <image class="cookIcon plus" src="../../assets/minus.svg"></image>
-                <view class="num" wx:if="false">{{child.num}}</view>
-                <image class="cookIcon minus" src="../../assets/plus.svg"></image>
+                <image class="cookIcon minus" wx:if="{{child.num > 0}}" data-num="{{child.num}}" bindtap="handleMinus" src="../../assets/minus.svg"></image>
+                <view class="num" wx:if="{{child.num > 0}}">{{child.num}}</view>
+                <image class="cookIcon plus" data-num="{{child.num}}" bindtap="handlePlus" src="../../assets/plus.svg"></image>
               </view>
             </view>
           </view>

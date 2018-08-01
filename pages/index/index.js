@@ -56,7 +56,7 @@ Page({
             sals: 12,
             like: 0,
             price: 38,
-            num: 0
+            num: 1
           },
           {
             icon: '../../assets/item.jpg',
@@ -74,7 +74,7 @@ Page({
             sals: 32,
             like: 12,
             price: 26,
-            num: 0
+            num: 2
           }
         ]
       },
@@ -353,6 +353,12 @@ Page({
       menuIndex: event.currentTarget.dataset.index,
       orientate: event.currentTarget.dataset.id
     })
+  },
+  handlePlus(event){
+    event.currentTarget.dataset.num++
+  },
+  handleMinus(event){
+    event.currentTarget.dataset.num--
   },
   //事件处理函数
   // bindViewTap: () => {

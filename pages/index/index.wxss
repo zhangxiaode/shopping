@@ -30,20 +30,26 @@
   color: transparent;
 }
 .menu .menuItem{
-  height:80rpx;line-height:80rpx;
-  color: #666;font-family: "Microsoft Yahei";
+  height:90rpx;line-height:90rpx;
+  color: #656565;font-size:34rpx;font-family: "Microsoft Yahei";
   padding-left:20rpx;
 }
 .menu .menuItem.actived{
+  font-size:32rpx;color:#ffa131;
   background:#fff;
 }
 .cookList{
   position:absolute;left:220rpx;top:0;right:0;
-  height:100%;
+  width:auto;height:100%;
 }
 .cookList .cookHd{
-  font-size:32rpx;color:#333;
+  font-size:30rpx;color:#333;
   padding:20rpx;
+}
+.cookList .cookHd:before{
+  float:left;content:"";width:6rpx;height:100%;
+  background:#ffa131;
+  margin-right:10rpx;
 }
 .cookList .item{
   display:flex;justify-content:space-around;align-items: center;
@@ -57,21 +63,26 @@
   margin-left:20rpx;height:200rpx;
 }
 .cookList .item .cookName{
-  font-size:40rpx;font-weight:bold;color:#666;
+  font-size:36rpx;font-weight:bold;color:#666;
 }
 .cookList .item .cookInfo{
   font-size:28rpx;color:#999;
 }
 .cookList .item .cookPrice{
   display:flex;justify-content:space-between;align-items: center;width:100%;
-  font-size:40rpx;font-weight:bold;color:#f00;
+  font-size:38rpx;font-weight:bold;color:#f00;
+}
+.cookList .item .cookPrice .cookPriceNum{
+  flex:1;
 }
 .cookList .item .cookPrice .changeNum{
-  display:flex;justify-content:space-between;align-items: center;
+  display:flex;justify-content:flex-end;align-items: center;
+  flex:1;
 }
 .cookList .item .cookPrice .cookIcon{
   width:48rpx;height:48rpx;border-radius:24rpx;
 }
 .cookList .item .cookPrice .num{
   margin:0 10rpx;color:#333;
+  flex:1;
 }

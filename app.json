@@ -6,6 +6,9 @@
     "pages/userCenter/index"
   ],
   "tabBar": {
+    "color": "#666",
+    "selectedColor": "#0152f6",
+    "position": "bottom",
     "list": [
       {
         "pagePath": "pages/index/index",
