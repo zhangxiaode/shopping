@@ -36,9 +36,9 @@
             <view class="cookPrice">
               <text class="cookPriceNum">¥{{child.price}}</text>
               <view class="changeNum">
-                <image class="cookIcon minus" wx:if="{{child.num > 0}}" data-num="{{child.num}}" bindtap="handleMinus" src="../../assets/minus.svg"></image>
+                <image class="cookIcon minus" wx:if="{{child.num > 0}}" data-index="{{index}}" data-idx="{{idx}}" bindtap="handleMinus" src="../../assets/minus.svg"></image>
                 <view class="num" wx:if="{{child.num > 0}}">{{child.num}}</view>
-                <image class="cookIcon plus" data-num="{{child.num}}" bindtap="handlePlus" src="../../assets/plus.svg"></image>
+                <image class="cookIcon plus" data-index="{{index}}" data-idx="{{idx}}" bindtap="handlePlus" src="../../assets/plus.svg"></image>
               </view>
             </view>
           </view>

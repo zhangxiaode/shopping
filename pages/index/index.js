@@ -355,10 +355,18 @@ Page({
     })
   },
   handlePlus(event){
-    event.currentTarget.dataset.num++
+    var index = event.currentTarget.dataset.index
+    var idx = event.currentTarget.dataset.idx
+    var cookList = this.data.cookList
+    cookList[index].cookBd[idx].num++
+    this.setData({ cookList })
   },
-  handleMinus(event){
-    event.currentTarget.dataset.num--
+  handleMinus(event) {
+    var index = event.currentTarget.dataset.index
+    var idx = event.currentTarget.dataset.idx
+    var cookList = this.data.cookList
+    cookList[index].cookBd[idx].num--
+    this.setData({ cookList })
   },
   //事件处理函数
   // bindViewTap: () => {
