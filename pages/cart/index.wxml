@@ -1,6 +1,26 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    page1
+<view class="cart">
+  <view class="address">
+    <text>选择收货地址 ></text>
+  </view>
+  <view class="cartList">
+    <view class="cartTit">订单</view>
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+    <view>4</view>
+  </view>
+  <view class="price">
+    小计¥62
+  </view>
+  <view class="remarks">
+    
+  </view>
+  <view class="paymentType">
+    
+  </view>
+  <view class="order">
+    <text>合计¥62</text>
+    <button type="default" bindtap="defaultTap">提交订单</button>
   </view>
 </view>

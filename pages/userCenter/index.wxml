@@ -1,6 +1,4 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    page2
-  </view>
+<view class="userCenter">
+  userCenter
 </view>

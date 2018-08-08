@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/cart/index",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/cart/index",
     "pages/userCenter/index"
   ],
   "tabBar": {

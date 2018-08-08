@@ -1,21 +1,24 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page{
+  background:-webkit-gradient(linear, 0 0, 0 50%, from(#eef), to(#fff));
+    background:-moz-linear-gradient(top, #eef,#fff);
+	background:linear-gradient(to bottom, #eef, #fff);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#eef,endColorstr=#fff,gradientType=0);
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.cart{
+  padding:20rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.cart .address{
+  font:bold 38rpx/54rpx "Microsoft Yahei";color:#aaa;
+  padding:20rpx 30rpx;
+  background:#fff;
 }
-
-.usermotto {
-  margin-top: 200px;
+.cart .cartList{
+  background:#fff;margin-top:10rpx;
+  padding:30rpx;
+}
+.cart .cartTit{
+  color:#ccc;font-size:32rpx;
+  border-bottom:solid 2rpx #eee;
+  padding-bottom:30rpx;
 }
