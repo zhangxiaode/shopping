@@ -1,26 +1,22 @@
 <!--index.wxml-->
-<view class="cart">
+<scroll-view class="cart">
   <view class="address">
     <text>选择收货地址 ></text>
   </view>
   <view class="cartList">
     <view class="cartTit">订单</view>
-    <view>1</view>
-    <view>2</view>
-    <view>3</view>
-    <view>4</view>
+    <cookItem wx:for="{{cookList}}" wx:key="index" item="{{item}}"></cookItem>
   </view>
   <view class="price">
-    小计¥62
+    小计 <text>¥62</text>  
   </view>
-  <view class="remarks">
-    
-  </view>
+  <navigator class="remarks" url="../home/index">备注:</navigator>
   <view class="paymentType">
-    
+    <text>支付方式</text>
+    <text>在线支付</text>
   </view>
   <view class="order">
     <text>合计¥62</text>
-    <button type="default" bindtap="defaultTap">提交订单</button>
+    <button type="warn" size="30" bindtap="defaultTap">提交订单</button>
   </view>
-</view>
+</scroll-view>

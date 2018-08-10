@@ -1,0 +1,16 @@
+<view class="item">
+  <image class="itemIcon" src="{{item.icon}}"></image>
+  <view class="itemTxt">
+    <view class="cookName">{{item.cookName}}</view>
+    <view class="cookInfo">{{item.cookIntro}}</view>
+    <view class="cookInfo">月售{{item.sals}} 赞{{item.like}}</view>
+    <view class="cookPrice">
+      <text class="cookPriceNum">¥{{item.price}}</text>
+      <view class="changeNum">
+        <image class="cookIcon minus" wx:if="{{item.num > 0}}" bindtap="handleMinus" src="../../assets/minus.svg"></image>
+        <view class="num" wx:if="{{item.num > 0}}">{{item.num}}</view>
+        <image class="cookIcon plus" bindtap="handlePlus" src="../../assets/plus.svg"></image>
+      </view>
+    </view>
+  </view>
+</view>

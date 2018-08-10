@@ -2,6 +2,7 @@
   "pages": [
     "pages/cart/index",
     "pages/index/index",
+    "pages/home/index",
     "pages/logs/logs",
     "pages/userCenter/index"
   ],
