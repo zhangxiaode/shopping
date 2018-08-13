@@ -1,1 +1,33 @@
 /**index.wxss**/
+page{
+  background:#f2f2f2;height:100%;
+}
+.userCenter .userInfo{
+  display:flex;justify-content: flex-start;align-items: center;
+  height:200rpx;padding:0 30rpx;
+  /* 1890ff */
+  background:#50dafe;
+}
+.userCenter .userInfo image{
+  width:100rpx;height:100rpx;border-radius:50rpx;
+  border:solid 2rpx #fff;box-sizing:border-box;
+}
+.userCenter .userInfo text{
+  color:#fff;font:normal 36rpx "Microsoft Yahei";
+  margin-left:20rpx;
+}
+.userWrap{
+  border-top:solid 2rpx #eee;border-bottom:solid 2rpx #eee;background:#fff;
+  display:flex;justify-content: space-around;align-items: center;
+  height:180rpx;
+}
+.userWrap .userBox{
+  display:flex;flex-direction: column;justify-content: space-around;align-items: center;flex:1;
+}
+.userWrap .userBox image{
+  width:60rpx;height:60rpx;
+  padding:10rpx;
+}
+.userWrap .userBox text{
+  color:#999;font-size:32rpx;
+}

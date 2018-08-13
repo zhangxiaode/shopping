@@ -1,0 +1,10 @@
+<view class="arrowBtn">
+  <view class="arrowL">
+    <image wx:if="{{arrowData.icon}}" src="{{arrowData.icon}}"></image>
+    <text>{{arrowData.arrowL}}</text>
+  </view>
+  <view class="arrowR">
+    <text>{{arrowData.arrowR}}</text>
+    <image wx:if="{{arrowData.showArrow}}" src="../../assets/right.svg"></image>
+  </view>
+</view>

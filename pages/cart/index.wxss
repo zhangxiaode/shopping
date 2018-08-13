@@ -4,7 +4,7 @@
   padding-bottom:110rpx;
 }
 .cart .address{
-  font:bold 38rpx/54rpx "Microsoft Yahei";color:#aaa;
+  font:normal 34rpx/54rpx "Microsoft Yahei";color:#ccc;
   background:#fff;border-bottom:solid 2rpx #eee;
   padding:20rpx 30rpx;
 }
@@ -25,9 +25,17 @@
   color:#f00;font-size:48rpx;
 }
 .cart .remarks{
+  display:flex;justify-content: space-between;align-items: center;
   height:80rpx;line-height:80rpx;padding:0 30rpx;
   margin-top:20rpx;
   background:#fff;
+}
+.cart .remarks navigator{
+  width:100rpx;
+}
+.cart .remarks input{
+  flex:1;height:80rpx;
+  font-size:28rpx;
 }
 .cart .paymentType{
   display:flex;justify-content: space-between;align-items: center;
@@ -38,10 +46,10 @@
 .cart .order{
   position:fixed;bottom:0;left:0;width:100%; height:110rpx;z-index:9;
   display:flex;justify-content: space-between;align-items: center;
+  background:#fff;border-top:solid 2rpx #ddd;
   margin-top:10rpx;padding-left:30rpx;
   box-sizing:border-box;
-  background:#fff;
 }
 .cart .order button{
-  margin:0;border-radius:0;
+  margin:0;border-radius:0;height:110rpx;
 }

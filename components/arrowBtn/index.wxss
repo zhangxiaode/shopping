@@ -1,0 +1,26 @@
+/**index.wxss**/
+.arrowBtn{
+  display:flex;justify-content: space-between;align-items: center;
+  padding:0 30rpx;background:#fff;
+  height:100rpx;
+}
+.arrowBtn .arrowL{
+  display:flex;align-items: center;
+}
+.arrowBtn .arrowL image{
+  width:36rpx;height:36rpx;
+  padding-right:10rpx;
+}
+.arrowBtn .arrowL text{
+  font-size:36rpx;font-family:"Microsoft Yahei";
+}
+.arrowBtn .arrowR{
+  display:flex;align-items: center;
+}
+.arrowBtn .arrowR text{
+  font-size:32rpx;color:#999;
+  padding-right:10rpx;
+}
+.arrowBtn .arrowR image{
+  width:32rpx;height:32rpx;
+}

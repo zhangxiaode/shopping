@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-// const app = getApp()
+const app = getApp()
 // import ajax from "../../utils/ajax"
 Page({
   data: {
@@ -50,15 +50,17 @@ Page({
         id: 'hot',
         cookBd: [
           {
+            id: 0,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
             sals: 12,
             like: 0,
             price: 38,
-            num: 1
+            num: 0
           },
           {
+            id: 1,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -68,13 +70,14 @@ Page({
             num: 0
           },
           {
+            id: 2,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
             sals: 32,
             like: 12,
             price: 26,
-            num: 2
+            num: 0
           }
         ]
       },
@@ -83,6 +86,7 @@ Page({
         id: 'cheap',
         cookBd: [
           {
+            id: 3,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
@@ -92,6 +96,7 @@ Page({
             num: 0
           },
           {
+            id: 4,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -101,6 +106,7 @@ Page({
             num: 0
           },
           {
+            id: 5,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
@@ -116,6 +122,7 @@ Page({
         id: 'new',
         cookBd: [
           {
+            id: 6,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
@@ -125,6 +132,7 @@ Page({
             num: 0
           },
           {
+            id: 7,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -134,6 +142,7 @@ Page({
             num: 0
           },
           {
+            id: 8,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
@@ -149,6 +158,7 @@ Page({
         id: 'cold',
         cookBd: [
           {
+            id: 9,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
@@ -158,6 +168,7 @@ Page({
             num: 0
           },
           {
+            id: 10,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -167,6 +178,7 @@ Page({
             num: 0
           },
           {
+            id: 11,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
@@ -182,6 +194,7 @@ Page({
         id: 'small',
         cookBd: [
           {
+            id: 12,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
@@ -191,6 +204,7 @@ Page({
             num: 0
           },
           {
+            id: 13,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -200,6 +214,7 @@ Page({
             num: 0
           },
           {
+            id: 14,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
@@ -215,6 +230,7 @@ Page({
         id: 'cereals',
         cookBd: [
           {
+            id: 15,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
@@ -224,6 +240,7 @@ Page({
             num: 0
           },
           {
+            id: 16,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -233,6 +250,7 @@ Page({
             num: 0
           },
           {
+            id: 17,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
@@ -248,6 +266,7 @@ Page({
         id: 'natural',
         cookBd: [
           {
+            id: 18,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
@@ -257,6 +276,7 @@ Page({
             num: 0
           },
           {
+            id: 19,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -266,6 +286,7 @@ Page({
             num: 0
           },
           {
+            id: 20,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
@@ -281,6 +302,7 @@ Page({
         id: 'fashion',
         cookBd: [
           {
+            id: 21,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
@@ -290,6 +312,7 @@ Page({
             num: 0
           },
           {
+            id: 22,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -299,6 +322,7 @@ Page({
             num: 0
           },
           {
+            id: 23,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
@@ -314,6 +338,7 @@ Page({
         id: 'service',
         cookBd: [
           {
+            id: 24,
             icon: '../../assets/item.jpg',
             cookName: '尖椒大肠',
             cookIntro: '带你赴一场美丽的旅行',
@@ -323,6 +348,7 @@ Page({
             num: 0
           },
           {
+            id: 25,
             icon: '../../assets/item.jpg',
             cookName: '红烧猪蹄',
             cookIntro: '一次让你吃个够',
@@ -332,6 +358,7 @@ Page({
             num: 0
           },
           {
+            id: 26,
             icon: '../../assets/item.jpg',
             cookName: '红烧肉',
             cookIntro: '美味的不二选择',
@@ -349,6 +376,19 @@ Page({
       menuIndex: event.currentTarget.dataset.index,
       orientate: event.currentTarget.dataset.id
     })
+  },
+  onShow() {
+    let cookList = this.data.cookList
+    cookList.map(items => {
+      items.cookBd.map(item => {
+        app.data.selectedCook.map(ele => {
+          if (ele.id == item.id) {
+            item.num = ele.num
+          }
+        })
+      })
+    })
+    this.setData({cookList})
   },
   onLoad() {
     /*ajax({

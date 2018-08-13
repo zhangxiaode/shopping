@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/cart/index",
     "pages/index/index",
+    "pages/cart/index",
+    "pages/userCenter/index",
     "pages/home/index",
-    "pages/logs/logs",
-    "pages/userCenter/index"
+    "pages/logs/logs"
   ],
   "tabBar": {
     "color": "#666",

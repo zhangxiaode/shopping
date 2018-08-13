@@ -1,4 +1,23 @@
 <!--index.wxml-->
 <view class="userCenter">
-  userCenter
+  <view class="userInfo">
+    <image src="../../assets/logo.png"></image>
+    <text>金风凝香</text>
+  </view>
+  <arrowBtn arrowData="{{orderData}}"></arrowBtn>
+  <view class="userWrap">
+    <view class="userBox">
+      <image src="../../assets/order.svg"></image>
+      <text>全部订单</text>
+    </view>
+    <view class="userBox">
+      <image src="../../assets/unpaid.svg"></image>
+      <text>代付款</text>
+    </view>
+    <view class="userBox">
+      <image src="../../assets/paided.svg"></image>
+      <text>已付款</text>
+    </view>
+  </view>
+  <arrowBtn arrowData="{{aboutData}}"></arrowBtn>
 </view>

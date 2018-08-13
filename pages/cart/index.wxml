@@ -5,12 +5,15 @@
   </view>
   <view class="cartList">
     <view class="cartTit">订单</view>
-    <cookItem wx:for="{{cookList}}" wx:key="index" item="{{item}}"></cookItem>
+    <cookItem wx:for="{{cookList}}" wx:key="index" item="{{item}}" wx:if="{{item.num > 0}}"></cookItem>
   </view>
   <view class="price">
-    小计 <text>¥62</text>  
+    小计 <text>¥{{price}}</text>
   </view>
-  <navigator class="remarks" url="../home/index">备注:</navigator>
+  <view class="remarks">
+    <navigator url="../home/index">备注:</navigator>
+    <input placeholder="请填写备注"/>
+  </view>
   <view class="paymentType">
     <text>支付方式</text>
     <text>在线支付</text>
