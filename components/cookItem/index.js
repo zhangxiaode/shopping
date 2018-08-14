@@ -1,4 +1,5 @@
 const app = getApp()
+import { cookList, changeCook } from '../../utils/cookList.js'
 Component({
   options: {
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
@@ -23,49 +24,46 @@ Component({
       item.num++
       this.setData({ item })
 
-      let selectedCook = app.data.selectedCook
-      const hasExist = selectedCook.some(ele => {
-        return ele.id == item.id
-      })
-      let total=0
-      if (!hasExist) {
-        selectedCook.push(item)
-      }else {
-        selectedCook.map(ele => {
-          if (ele.id == item.id) {
-            ele.num = item.num
+      // cookList.map(children => {
+      //   children.cookBd.map(child=> {
+      //     if (item.id == child.id){
+      //       child.num++
+      //     }
+      //   })
+      // })
+      let total = 0
+      cookList.map(children => {
+        children.cookBd.map(child => {
+          if (child.num > 0) {
+            total += child.num
           }
         })
-      }
-      app.changeCook(selectedCook)
-      app.changePrice()
-      selectedCook.map(ele => {
-        total += ele.num
       })
       wx.setTabBarBadge({
         index: 1,
         text: total.toString()
       })
+      this.triggerEvent('changeNum')
     },
     handleMinus(event) {
       let item = this.data.item
       item.num--
       this.setData({ item })
 
-      let selectedCook = app.data.selectedCook
+      // cookList.map(children => {
+      //   children.cookBd.map(child => {
+      //     if (item.id == child.id) {
+      //       child.num--
+      //     }
+      //   })
+      // })
       let total = 0
-      selectedCook.map((ele, index) => {
-        if (ele.id == item.id) {
-          ele.num = item.num
-        }
-        if (ele.num <=0){
-          selectedCook.splice(index,1)
-        }
-      })
-      app.changeCook(selectedCook)
-      app.changePrice()
-      selectedCook.map(ele => {
-        total += ele.num
+      cookList.map(children => {
+        children.cookBd.map(child => {
+          if (child.num>0) {
+            total += child.num
+          }
+        })
       })
       if(total <= 0){
         wx.removeTabBarBadge({
@@ -77,6 +75,7 @@ Component({
           text: total.toString()
         })
       }
+      this.triggerEvent('changeNum')
     }
   }
 })

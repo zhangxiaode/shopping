@@ -8,11 +8,12 @@ page{
   /* 1890ff */
   background:#50dafe;
 }
-.userCenter .userInfo image{
+.userCenter .userInfo .userAvatar{
   width:100rpx;height:100rpx;border-radius:50rpx;
   border:solid 2rpx #fff;box-sizing:border-box;
+  overflow:hidden;
 }
-.userCenter .userInfo text{
+.userCenter .userInfo .nickName{
   color:#fff;font:normal 36rpx "Microsoft Yahei";
   margin-left:20rpx;
 }

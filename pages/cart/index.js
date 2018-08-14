@@ -1,22 +1,16 @@
 //index.js
-//获取应用实例
-const app = getApp()
+import { cookList } from '../../utils/cookList.js'
 
 Page({
   data: {
-    cookList: [],
-    price: 0
+    cookList
   },
-  //事件处理函数
+  changeNum() {
+    console.log(111, cookList)
+  },
   onShow() {
-    this.setData({
-      cookList: app.data.selectedCook,
-      price: app.data.price
-    })
   },
-  onHide(){
-    this.setData({
-      cookList: app.data.selectedCook
-    })
+  onHide() {
+    this.setData({ cookList })
   }
 })

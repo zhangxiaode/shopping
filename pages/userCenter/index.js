@@ -16,7 +16,9 @@ Page({
       icon: '../../assets/info.svg'
     }
   },
+  onLoad(){
+  },
   onShow() {
-    // console.log(app.data.selectedCook)
+    
   }
 })

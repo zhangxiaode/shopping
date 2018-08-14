@@ -5,10 +5,13 @@
   </view>
   <view class="cartList">
     <view class="cartTit">订单</view>
-    <cookItem wx:for="{{cookList}}" wx:key="index" item="{{item}}" wx:if="{{item.num > 0}}"></cookItem>
+    <view wx:for="{{cookList}}" wx:key="index" wx:for-index="index" wx:for-item="item" id="{{item.id}}">
+      <cookItem wx:for="{{item.cookBd}}" wx:key="idx" wx:for-index="idx" wx:for-item="child" bindchangeNum="changeNum" item="{{child}}">
+      </cookItem>
+    </view>
   </view>
   <view class="price">
-    小计 <text>¥{{price}}</text>
+    小计 <text>¥123</text>
   </view>
   <view class="remarks">
     <navigator url="../home/index">备注:</navigator>
@@ -19,7 +22,7 @@
     <text>在线支付</text>
   </view>
   <view class="order">
-    <text>合计¥62</text>
+    <text>合计¥123</text>
     <button type="warn" size="30" bindtap="defaultTap">提交订单</button>
   </view>
 </scroll-view>

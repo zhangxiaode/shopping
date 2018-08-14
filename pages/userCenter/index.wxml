@@ -1,8 +1,8 @@
 <!--index.wxml-->
 <view class="userCenter">
   <view class="userInfo">
-    <image src="../../assets/logo.png"></image>
-    <text>金风凝香</text>
+    <open-data class="userAvatar" type="userAvatarUrl"></open-data>
+    <open-data class="nickName" type="userNickName"></open-data>
   </view>
   <arrowBtn arrowData="{{orderData}}"></arrowBtn>
   <view class="userWrap">
