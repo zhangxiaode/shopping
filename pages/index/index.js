@@ -52,9 +52,11 @@ Page({
     })
   },
   onShow() {
+    console.log(123, cookList)
+    console.log(321, this.data.cookList)
   },
   onHide() {
-    this.setData({ cookList })
+    // this.setData({ cookList })
   },
   onLoad() {
     /*ajax({
