@@ -11,6 +11,6 @@ Page({
   onShow() {
   },
   onHide() {
-    this.setData({ cookList })
+    // this.setData({ cookList })
   }
 })
