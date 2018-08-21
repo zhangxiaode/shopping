@@ -2,9 +2,9 @@
 page{
   height:100%;
 }
-.home{
+.homePage{
   height:100%;overflow:hidden;text-align:center;
 }
-.home image{
+.homePage image{
   min-width:100%;min-height:100%;
 }

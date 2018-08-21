@@ -1,10 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/cart/index",
-    "pages/userCenter/index",
     "pages/home/index",
-    "pages/logs/logs"
+    "pages/index/index",
+    "pages/userCenter/index"
   ],
   "tabBar": {
     "color": "#666",
@@ -16,12 +14,6 @@
         "iconPath": "assets/home.png",
         "selectedIconPath": "assets/homeHover.png",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/cart/index",
-        "iconPath": "assets/cart.png",
-        "selectedIconPath": "assets/cartHover.png",
-        "text": "购物车"
       },
       {
         "pagePath": "pages/userCenter/index",

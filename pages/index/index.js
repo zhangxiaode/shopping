@@ -1,5 +1,5 @@
 //index.js
-import { cookList } from '../../utils/cookList.js'
+const app = getApp()
 // import ajax from "../../utils/ajax"
 Page({
   data: {
@@ -43,23 +43,31 @@ Page({
       }
     ],
     orientate: 'hot',
-    cookList
+    cookList: app.globalData.cookList,
+    price: 0
   },
-  changeIndex(event){
+  changePrice(event) {
+    var total = 0
+    app.globalData.cookList.map((item,index) => {
+      item.cookBd.map((child, idx) => {
+        if (child.num > 0) {
+          total += child.price * child.num
+        }
+      })
+    })
+    this.setData({
+      price:total
+    })
+  },
+  changeIndex(event) {
     this.setData({
       menuIndex: event.currentTarget.dataset.index,
       orientate: event.currentTarget.dataset.id
     })
   },
   onShow() {
-    this.setData({
-      cookList
-    })
-    // console.log(123, cookList)
-    // console.log(321, this.data.cookList)
   },
   onHide() {
-    // this.setData({ cookList })
   },
   onLoad() {
     /*ajax({

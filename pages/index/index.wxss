@@ -1,7 +1,7 @@
 /**index.wxss**/
 .menu{
-  position:absolute;left:0;top:0;
-  height:100%;width:220rpx;
+  position:absolute;left:0;top:0;bottom:100rpx;
+  width:220rpx;
   background:#f2f2f2;
 }
 ::-webkit-scrollbar {
@@ -19,8 +19,8 @@
   background:#fff;
 }
 .cookList{
-  position:absolute;left:220rpx;top:0;right:0;
-  width:auto;height:100%;
+  position:absolute;left:220rpx;top:0;bottom:100rpx;right:0;
+  width:auto;
 }
 .cookList .cookHd{
   font-size:30rpx;color:#333;
@@ -30,4 +30,21 @@
   float:left;content:"";width:6rpx;height:100%;
   background:#ffa131;
   margin-right:10rpx;
+}
+.cart{
+  display:flex;justify-content: space-between;align-items: center;
+  position:fixed;bottom:0;left:0;width:100%;height:100rpx;
+  background:rgb(91, 196, 245);
+}
+.cart image{
+  width:80rpx;height:80rpx;color:#fff;
+  margin:10rpx;
+}
+.cart text{
+  flex:1;color:#fff;
+}
+.cart button{
+  color:#fff;font:normal 36rpx/100rpx "Microsoft Yahei";
+  border-radius:0;background:#1890ff;border:none;
+  width:200rpx;height:100rpx;
 }

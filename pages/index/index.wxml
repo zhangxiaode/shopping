@@ -13,8 +13,13 @@
         {{item.cookHd}}
       </view>
       <view class="cookBd">
-        <cookItem wx:for="{{item.cookBd}}" wx:key="idx" wx:for-index="idx" wx:for-item="child" item="{{child}}"></cookItem>
+        <cookItem wx:for="{{item.cookBd}}" wx:key="idx" wx:for-index="idx" wx:for-item="child" item="{{child}}" data-index="{{index}}" data-idx="{{idx}}"  bind:changePrice="changePrice"></cookItem>
       </view>
     </view>
   </scroll-view>
+  <view class="cart">
+    <image src="../../assets/cart.svg"></image>
+    <text>¥{{price}}</text>
+    <button>去结算</button>
+  </view>
 </view>

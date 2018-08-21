@@ -1,8 +1,4 @@
 {
-  "component": true,
-  "usingComponents": {
-    "demo": "/components/demo/index"
-  },
   "navigationBarTitleText": "",       
   "navigationBarBackgroundColor": "#c6f"
 }
