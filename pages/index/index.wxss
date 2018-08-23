@@ -50,7 +50,12 @@
 }
 .cartList{
   position:fixed;bottom:100rpx;left:0;z-index:9;width:100%;
-  background:#fff;
+  background:#fff;transition: all 0.3s;
+  transform-origin: center bottom;
+  transform:scaleY(0);
+}
+.cartList.showList{
+  transform:scaleY(1);
 }
 .cartList .cartItem{
   display:flex;justify-content: space-between;align-items: center;

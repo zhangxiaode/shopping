@@ -17,33 +17,22 @@
       </view>
     </view>
   </scroll-view>
-  <view class="cartList">
-    <view class="cartItem">
+  <view class="{{showList ? 'cartList showList' : 'cartList'}}">
+    <view wx:for="{{cartList}}" wx:key="{{index}}" class="cartItem">
       <view class="describe">
-        <text class="goodsName">9.9元阿方索华筒2个</text>
-        <text class="goodsPrice">¥9.9</text>
+        <text class="goodsName">{{item.cookName}}</text>
+        <text class="goodsPrice">¥{{item.price}}</text>
       </view>
       <view class="changeNum">
-        <image class="cookIcon minus" bindtap="handleMinus" src="../../assets/minus.svg"></image>
-        <view class="num">1</view>
-        <image class="cookIcon plus" bindtap="handlePlus" src="../../assets/plus.svg"></image>
-      </view>
-    </view>
-    <view class="cartItem">
-      <view class="describe">
-        <text class="goodsName">9.9元阿方索华筒2个</text>
-        <text class="goodsPrice">¥9.9</text>
-      </view>
-      <view class="changeNum">
-        <image class="cookIcon minus" bindtap="handleMinus" src="../../assets/minus.svg"></image>
-        <view class="num">1</view>
-        <image class="cookIcon plus" bindtap="handlePlus" src="../../assets/plus.svg"></image>
+        <image class="cookIcon minus" data-item="{{item}}" bindtap="handleMinus" src="../../assets/minus.svg"></image>
+        <view class="num">{{item.num}}</view>
+        <image class="cookIcon plus" data-item="{{item}}" bindtap="handlePlus" src="../../assets/plus.svg"></image>
       </view>
     </view>
   </view>
-  <view class="cart">
+  <view class="cart" bindtap="handleCart">
     <image src="../../assets/cart.svg"></image>
     <text>¥{{price}}</text>
-    <button>去结算</button>
+    <button capture-catch:tap="goPay">提交</button>
   </view>
 </view>
