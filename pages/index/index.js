@@ -6,40 +6,28 @@ Page({
     menuIndex: 0,
     menuList:[
       {
-        value:'热销',
-        id: 'hot'
+        value:'浆果类',
+        id: 'berry'
       },
       {
-        value:'折扣',
-        id: 'cheap'
+        value:'柑橘类',
+        id: 'citrus'
       },
       {
-        value:'新品推荐',
-        id: 'new'
+        value:'核果',
+        id: 'nuclear'
       },
       {
-        value:'精品冷菜',
-        id: 'cold'
+        value:'仁果',
+        id: 'benevolence'
       },
       {
-        value:'精品小菜',
-        id: 'small'
+        value:'瓜类',
+        id: 'melon'
       },
       {
-        value:'五谷杂粮',
-        id: 'cereals'
-      },
-      {
-        value:'天然饮品',
-        id: 'natural'
-      },
-      {
-        value:'时尚酷饮',
-        id: 'fashion'
-      },
-      {
-        value:'服务承诺',
-        id: 'service'
+        value:'其他',
+        id: 'others'
       }
     ],
     orientate: 'hot',
