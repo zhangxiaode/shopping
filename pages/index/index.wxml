@@ -17,6 +17,30 @@
       </view>
     </view>
   </scroll-view>
+  <view class="cartList">
+    <view class="cartItem">
+      <view class="describe">
+        <text class="goodsName">9.9元阿方索华筒2个</text>
+        <text class="goodsPrice">¥9.9</text>
+      </view>
+      <view class="changeNum">
+        <image class="cookIcon minus" bindtap="handleMinus" src="../../assets/minus.svg"></image>
+        <view class="num">1</view>
+        <image class="cookIcon plus" bindtap="handlePlus" src="../../assets/plus.svg"></image>
+      </view>
+    </view>
+    <view class="cartItem">
+      <view class="describe">
+        <text class="goodsName">9.9元阿方索华筒2个</text>
+        <text class="goodsPrice">¥9.9</text>
+      </view>
+      <view class="changeNum">
+        <image class="cookIcon minus" bindtap="handleMinus" src="../../assets/minus.svg"></image>
+        <view class="num">1</view>
+        <image class="cookIcon plus" bindtap="handlePlus" src="../../assets/plus.svg"></image>
+      </view>
+    </view>
+  </view>
   <view class="cart">
     <image src="../../assets/cart.svg"></image>
     <text>¥{{price}}</text>

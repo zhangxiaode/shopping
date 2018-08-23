@@ -48,3 +48,31 @@
   border-radius:0;background:#1890ff;border:none;
   width:200rpx;height:100rpx;
 }
+.cartList{
+  position:fixed;bottom:100rpx;left:0;z-index:9;width:100%;
+  background:#fff;
+}
+.cartList .cartItem{
+  display:flex;justify-content: space-between;align-items: center;
+  border-bottom:solid 2rpx #eee;
+  height:140rpx;padding:0 20rpx;
+}
+.cartItem .describe{
+  flex:1;display:flex;flex-direction: column;justify-content: space-between;align-items: flex-start;
+}
+.cartItem .describe .goodsName{
+  font:normal 32rpx "Microsoft Yahei";
+}
+.cartItem .describe .goodsPrice{
+  color:#f00;font:bold 42rpx "Microsoft Yahei";
+}
+.cartItem .changeNum{
+  display:flex;justify-content:flex-end;align-items: center;
+}
+.cartItem .cookIcon{
+  width:48rpx;height:48rpx;border-radius:24rpx;
+}
+.cartItem .num{
+  margin:0 10rpx;color:#333;
+  flex:1;
+}
