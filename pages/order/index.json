@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+  },
+  "navigationBarTitleText": "订单列表"
+}

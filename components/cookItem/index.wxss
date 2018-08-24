@@ -25,6 +25,9 @@
 .item .cookPrice .cookPriceNum{
   flex:1;
 }
+.item .cookPrice .cookPriceNum text{
+  font-weight:normal;font-size:30rpx;color:#ccc;
+}
 .item .cookPrice .changeNum{
   display:flex;justify-content:flex-end;align-items: center;
 }
@@ -32,6 +35,6 @@
   width:48rpx;height:48rpx;border-radius:24rpx;
 }
 .item .cookPrice .num{
-  margin:0 10rpx;color:#333;
+  color:#333;
   flex:1;
 }

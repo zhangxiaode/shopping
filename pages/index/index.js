@@ -30,11 +30,12 @@ Page({
         id: 'others'
       }
     ],
-    orientate: 'hot',
+    orientate: 'berry',
     cookList: app.globalData.cookList,
     price: 0,
     cartList: app.globalData.cartList,
-    showList:false
+    showList:false,
+    scrollData: []
   },
   changePrice(event) {
     var total = 0
@@ -132,7 +133,39 @@ Page({
       }
     })
   },
+  scrollCook(event){
+    this.data.scrollData.map((item,index)=>{
+      if (index < this.data.scrollData.length - 1){
+        if (event.detail.scrollTop > item.scrollTop && event.detail.scrollTop < this.data.scrollData[index+1].scrollTop) {
+          this.setData({
+            menuIndex: index
+          })
+        }
+      } else {
+        if (event.detail.scrollTop > item.scrollTop) {
+          this.setData({
+            menuIndex: index
+          })
+        }
+      }
+    })
+  },
   onShow() {
+    var query = wx.createSelectorQuery()
+    query.selectAll('.cookWrap').boundingClientRect()
+    query.selectViewport().scrollOffset()
+    query.exec((res) => {
+      var scrollData = []
+      res[0].map((item,index) => {
+        scrollData.push({
+          scrollTop: item.top,
+          id: item.id
+        })
+      })
+      this.setData({
+        scrollData
+      })
+    })
   },
   onHide() {
   },

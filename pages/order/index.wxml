@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="order">
+  <view class="tabHd">
+    <view wx:for="{{orderNavList}}" wx:key="{{index}}" class="{{item.status ? 'ordernav actived': 'ordernav'}}" bindtap="switchNav" data-index="{{index}}">{{item.name}}</view>
+  </view>
+  <view class="tabBd">
+    <view class="noOrder" wx:if="{{orderList.length===0}}">
+      <view class="noOrderIcon">
+        <image src="../../assets/noOrder.svg"></image>
+      </view>
+      <view class="noOrderTxt">您还没有相关订单</view>
+      <view class="goIndex" bindtap="goIndex">随便逛逛</view>
+    </view>
+    <view class="orderList" wx:else>
+      <view class="orderItem"  wx:for="{{orderList}}" wx:key="{{index}}">
+        <image src="../../assets/logo.png"></image>
+        <view class="orderInfo">
+          <view class="orderNum">数量：{{item.orderNum}}</view>
+          <view class="orderPrice">总价：¥{{item.orderPrice}}</view>
+          <view class="orderTime">订单日期：{{item.orderTime}}</view>
+        </view>
+        <view class="status">{{item.status === 1 ? "已付款" : "待付款"}}</view>
+      </view>
+    </view>
+  </view>
+</view>

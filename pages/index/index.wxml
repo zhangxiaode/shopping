@@ -7,7 +7,7 @@
       </view>
     </view>
   </scroll-view>
-  <scroll-view class="cookList" scroll-y scroll-into-view="{{orientate}}" scroll-with-animation>
+  <scroll-view class="cookList" scroll-y bindscroll="scrollCook" scroll-into-view="{{orientate}}" scroll-with-animation>
     <view class="cookWrap" wx:for="{{cookList}}" wx:key="index" wx:for-index="index" wx:for-item="item" id="{{item.id}}">
       <view class="cookHd">
         {{item.cookHd}}

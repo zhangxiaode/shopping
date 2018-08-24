@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="about">
+  <image src="../../assets/logo.png"></image>
+  <view class="aboutCont">
+    <view>姓名：张孝德</view>
+    <view>电话：15057159482</view>
+    <view>门店：亢亢点单</view>
+    <view>地址：杭州市西湖区</view>
+  </view>
+</view>

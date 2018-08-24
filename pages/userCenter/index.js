@@ -16,6 +16,16 @@ Page({
       icon: '../../assets/info.svg'
     }
   },
+  goAbout(){
+    wx.navigateTo({
+      url: '../about/index'
+    })
+  },
+  goOrder(event){
+    wx.navigateTo({
+      url: '../order/index?index=' + event.currentTarget.dataset.index
+    })
+  },
   onLoad(){
   },
   onShow() {

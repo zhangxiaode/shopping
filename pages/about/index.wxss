@@ -1,0 +1,11 @@
+/**index.wxss**/
+page{
+  height:100%;text-align:center;
+}
+.about image{
+  width:200rpx;height:200rpx;
+}
+.about .aboutCont{
+  text-align:left;width:80%;margin:0 auto;
+  line-height:100rpx;
+}

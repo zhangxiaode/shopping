@@ -5,7 +5,7 @@
     <view class="cookInfo">{{item.cookIntro}}</view>
     <view class="cookInfo">月售{{item.sals}} 赞{{item.like}}</view>
     <view class="cookPrice">
-      <text class="cookPriceNum">¥{{item.price}}</text>
+      <text class="cookPriceNum">¥{{item.price}}<text>/500g</text></text>
       <view class="changeNum">
         <image class="cookIcon minus" wx:if="{{item.num > 0}}" bindtap="handleMinus" src="../../assets/minus.svg"></image>
         <view class="num" wx:if="{{item.num > 0}}">{{item.num}}</view>

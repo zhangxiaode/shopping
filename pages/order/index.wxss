@@ -1,0 +1,64 @@
+/**index.wxss**/
+page{
+  height:100%;
+}
+.order{
+  height:100%;
+}
+.order .tabHd{
+  height:100rpx;display:flex;justify-content: space-around;align-items: center;
+  border-bottom:solid 2rpx #ddd;
+}
+.order .tabHd .ordernav{
+  flex:1;text-align:center;line-height:100rpx;
+  cursor:pointer;
+}
+.order .tabHd .ordernav.actived{
+  color:#f00;
+}
+.order .tabBd{
+  position:absolute;top:100rpx;bottom:0;left:0;width:100%;
+  box-sizing:border-box;
+}
+.order .noOrder{
+  padding-top:50rpx;
+}
+.order .noOrderIcon{
+  width:180rpx;height:180rpx;border-radius:90rpx;background:#eee;
+  margin:0 auto;
+}
+.order .noOrderIcon image{
+  width:100rpx;height:100rpx;margin:40rpx;
+}
+.order .noOrderTxt{
+  text-align:center;font:normal 32rpx "Microsoft Yahei";color:#ccc;
+  padding:50rpx 0;
+}
+.order .goIndex{
+  width:400rpx;height:100rpx;line-height:100rpx;
+  color:#fff;text-align:center;margin:0 auto;
+  border-radius:20rpx;background:#1890ff;
+}
+.orderItem{
+  height:150rpx;display:flex;justify-content: space-between;align-items: flex-start;
+  padding:20rpx;border-bottom:solid 2rpx #eee;
+}
+.orderItem image{
+  width:100rpx;height:100rpx;border-radius:50rpx;
+  margin-right:20rpx;
+}
+.orderItem .orderInfo{
+  flex:1;
+}
+.orderItem .orderNum{
+  color:#666;font-size:34rpx;
+}
+.orderItem .orderPrice{
+  color:#666;font-size:34rpx;padding:10rpx 0;
+}
+.orderItem .orderTime{
+  color:#ccc;font-size:30rpx;
+}
+.orderItem .status{
+  color:#6c8;font-size:30rpx;
+}

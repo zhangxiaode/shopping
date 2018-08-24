@@ -2,7 +2,9 @@
   "pages": [
     "pages/home/index",
     "pages/index/index",
-    "pages/userCenter/index"
+    "pages/userCenter/index",
+    "pages/order/index",
+    "pages/about/index"
   ],
   "tabBar": {
     "color": "#666",
