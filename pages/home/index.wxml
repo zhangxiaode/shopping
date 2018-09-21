@@ -1,4 +1,9 @@
 <!--index.wxml-->
 <view class="homePage">
   <image src="../../assets/welcome.jpg"></image>
+  <!-- <button open-type="getUserInfo">获取权限</button>
+  <live-pusher id="pusher" url="https://domain/push_stream" mode="RTC" autopush />
+  <live-player id="player" url="https://domain/push_stream" mode="live" autoplay />
+  <button bindtap='startRecord'>开始录音</button>
+  <button bindtap='endRecord'>结束录音</button> -->
 </view>
